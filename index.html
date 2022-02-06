@@ -1,22 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Glen Rodrigues</title>
-</head>
-<body class="bg-dark text-white m-3">
-  <div class="hstack gap-2 mb-4">
-    <h1 class='me-auto pt-2 font-weight-bold'>Glen Rodrigues</h1>
-    <Button class="btn btn-outline border-3" style="border-color: #04ffab;color: #04ffab;font-weight: bold;" onclick="location.href = 'https://github.com/GlenR16'">Github</Button>
-    <Button class="btn btn-outline border-3" style="border-color: #04ffab;color: #04ffab;font-weight: bold;" onclick="location.href='mailto:glenrogers1234@gmail.com';">Email</Button>
-  </div>
-  <div class="border rounded border-3 border-info p-4" style="font-size:2rem;">
-    Hello , This is my portfolio website.<br/>
-    It is currently under construction. <br/>Please come by later.
-  </div>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Glen Rodrigues</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<body class="global">
+
+    <div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span>Main</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><span>About Me</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#lang"><span>Languages</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects"><span>Projects</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="first-content">
+                <h1>I am <em>Glen</em></h1>
+                <span><em>Computer </em>Engineer</span>
+                <div class="primary-button">
+                    <a href="#about">About Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-content" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left-text">
+                        <h4>More About Me</h4>
+                        <div class="line-dec"></div>
+                        <p>I am a Computer Engineering Student at Fr.Conceicao Rodrigues College of Engineering. 
+                        I have worked on several projects in different domains of Infomation Tech and Computer Science.</p>
+                        <ul>
+                            <li>-  Cyber Security Enthusiast</li>
+                            <li>-  Django and React Web Developer.</li>
+                            <li>-  Machine Learning and NLP.</li>
+                            <li>-  Android and Flutter Developer.</li>
+                            <li>-  Many more to learn.</li>
+                        </ul>
+                        <div class="primary-button">
+                            <a href="#lang">Coding Languages</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Achivements</h4>
+                                <div class="line-dec"></div>
+                                <p>HackTheBox Global Rank 575 <br> TryHackMe top 7th percentile <br> Participated in 5 CTFs </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>CTF Team Ranks (Global)</h4>
+                                <div class="line-dec"></div>
+                                <p>Damncon CTF : 30 <br> Square CTF : 61 <br> ShaastraCTF : 58 </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Certificates</h4>
+                                <div class="line-dec"></div>
+                                <p>Python(Basic) from HackerRank.<br> TryHackMe Advent of Cyber.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>My Self</h4>
+                                <div class="line-dec"></div>
+                                <p>Fast Learner. <br>Great problem solving skills. <br> Fluent in English. <br> Energetic & Punctual. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="parallax-content projects-content" id="lang">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="owl-testimonials" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="img/ISO_C++_Logo.svg" alt="" class="lang-icon"></a>
+                                <div class="text-content">
+                                    <h4>C / C++</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="img/Python-logo-notext.svg" alt="" class="lang-icon"></a>
+                                <div class="text-content">
+                                    <h4>Python</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="img/Java_programming_language_logo.svg" alt="" class="lang-icon">
+                                <div class="text-content">
+                                    <h4>Java</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="img/HTML5_logo_and_wordmark.svg" alt="" class="lang-icon">
+                                <div class="text-content">
+                                    <h4>HTML5</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="img/CSS3_logo_and_wordmark.svg" alt="" class="lang-icon">
+                                <div class="text-content">
+                                    <h4>CSS3</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="img/Bash_Logo_Colored.svg" alt="" class="lang-icon">
+                                <div class="text-content">
+                                    <h4>BASH</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-white text-center mt-5">
+                        <div class="primary-button">
+                            <a href="#projects">My Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tabs-content" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="wrapper">
+                    <section id="first-tab-group" class="tabgroup mt-5">
+                      <div id="tab1">
+                        <p>Automated several formula based functions on excel sheet using python and reduced the time required to calculate the data manually. The script gets label names and data from the excel sheet and calculates various data values. </p>
+                      </div>
+                      <div id="tab2">
+                        <p>Created a finance management app using react-js , bootstrap and node. You can track our monthly expenses and income using this app. The app will also calculated the total savings you made throughout the year.</p>
+                      </div>
+                      <div id="tab3">
+                        <p>Create a URL shortener using python and django framwork. This web app can be used to create short urls of websites and can redirect the user. It also has personalized urls and database management of the created urls.</p>
+                      </div>
+                      <div id="tab4">
+                        <p>Created a online meeting summariser using python and NLP. This app can record transcripts and generate useful information regarding the meeting held. It uses Machine learning to generate the summary.</p>
+                      </div>
+                    </section>
+                    <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                      <li><a href="#tab1" class="active">Auto Excel</a></li>
+                      <li><a href="#tab2">Finance Manager</a></li>
+                      <li><a href="#tab3">URLShort</a></li>
+                      <li><a href="#tab4">Team Meet Summarizer</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="container text-white text-center mt-5">
+                    <div class="primary-button">
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <footer>
+        <div class="container" id="contact" style="height:80vh;">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/glen-rodrigues16/" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a></li>
+                        <li><a href="https://github.com/GlenR16" target="_blank"><i class="fa fa-github fa-5x"></i></a></li>
+                        <li><a href="mailto:glenrogers1234@gmail.com"><i class="fa fa-envelope fa-5x"></i></a></li>
+                    </ul>
+                    <div class="container text-white text-center mt-5" style="font-size: 25px;">
+                        Hello, Thank you for viewing my website. For any queries regarding work, feel free to contact me on the following links. I will respond to you in 1 - 4 working days.<br> Have a nice day.
+                    </div>
+                    <div class="primary-button">
+                        <a href="#home">Back To Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
 </body>
 </html>
