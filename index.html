@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <!--<script src="https://kit.fontawesome.com/853e6dc438.js" crossorigin="anonymous"></script>-->
+    <title>Glen Rodrigues</title>
+</head>
+<body>
+    <nav id="nav">
+        <a href="#home" class="navlink active">Home</a>
+        <a href="#about" class="navlink">About</a>
+        <a href="#languages" class="navlink">Languages</a>
+        <a href="#projects" class="navlink">Projects</a>
+        <a href="#certs" class="navlink">Certifications</a>
+        <a href="#achieve" class="navlink">Achievements</a>
+        <a href="#contact" class="navlink">Contact</a>
+    </nav>
+    <main id="home">
+        <p class="jumbotron">I'm Glen<br>A Computer Engineering student</p>
+    </main>
+    <main id="about">
+        <div class="heading">About Me</div>
+        <div class="column">
+            I am a third year computer engineering student at Fr.Conceicao Rodrigues college of Engineering. <br> I enjoy working on web development projects and participating in cybersecurity competitions. <br>
+            I have worked on projects that vary in domain and would like to continue learning new concepts of computer science. <br> This website was completely made by me. I hope you enjoy your stay here.
+        </div>
+    </main>
+    <main id="languages">
+        <div class="row">
+            <div class="column">
+                <div class="heading">Languages</div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>Java</li>
+                    <li>Bash</li>
+                    <li>Go Lang</li>
+                    <li>LAMP/Django Stack</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="heading">Softwares/Technologies</div>
+                <ul>
+                    <li>Windows/Linux</li>
+                    <li>Apache</li>
+                    <li>VSCode</li>
+                    <li>MySQL/SQLite3/NoSQL</li>
+                    <li>Github/Git</li>
+                    <li>Jupyter/Colab</li>
+                    <li>Machine Learning</li>
+                    <li>Jira</li>
+                    <li>Jenkins</li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    <main id="projects">
+        <br><br>
+        <div class="heading">My Projects</div>
+        <select name="projects" id="projects" onchange="projectChange(this.value);">
+            <option value="1">Stock Market Analyzer</option>
+            <option value="2">OCR App</option>
+            <option value="3">Finance Manager</option>
+            <option value="4">URLShort</option>
+            <option value="5">Team Meet Summarizer</option>
+            <option value="6">Chrome Homepage</option>
+        </select>
+        <div class="column" id="sma">
+            <u>Summary:</u><br>
+            Created a web application that uses a combination of sentiment analysis and regression algorithms to determine the change in the stock market.
+            The application of these two methods simultaneously allows us to control the precision and accuracy of the prediction algorithm. 
+            Allow users of the web application to learn and make decisions about the stock market, and help them gain financial independence. <br>
+            <u>Technologies used:</u>
+            <ul>
+                <li>Django</li>
+                <li>Python</li>
+                <li>Scrapy</li>
+                <li>Tensorflow</li>
+                <li>Keras</li>
+                <li>Scikit Learn</li>
+                <li>NLTK</li>
+            </ul>
+            <u>Github:</u> <br>
+            Work in Progress.
+        </div>
+        <div class="column" id="ocr" style="display: none;">
+            <u>Summary:</u><br>
+            Created a Tkinter based computer application that uses machine learning to convert images, drawings and PDFs to text. 
+            Application has an inbuilt white board to enable users to draw/write the text and convert it into text with one click. 
+            It can also take live input from the user camera and detect text in the frame.  <br>
+            <u>Technologies used:</u><br>
+            <ul>
+                <li>Python</li>
+                <li>Tkinter</li>
+                <li>PyTesseract</li>
+                <li>OpenCV</li>
+            </ul>
+            <u>Github:</u> <br>
+            <a href="https://github.com/GlenR16/OCR">Optical Character Recognition</a>
+        </div>
+        <div class="column" id="finance" style="display: none;">
+            <u>Summary:</u><br>
+            Created a React based simple web application to keep track of your finances.
+            Uses NodeJS as a backend to calculate total savings and balance.
+            Enables user to categorize their expenses easly and monitor budgets from a single glance.<br>
+            <u>Technologies used:</u><br>
+            <ul>
+                <li>NodeJS</li>
+                <li>React</li>
+                <li>Material-UI</li>
+                <li>Bootstrap</li>
+            </ul>
+            <u>Github:</u> <br>
+            <a href="https://github.com/GlenR16/Finance-Manager">Finance Manager</a>
+        </div>
+        <div class="column" id="urlshort" style="display: none;">
+            <u>Summary:</u><br>
+            Created a simple url shortner web application that allows user to customise the shortend url as well.
+            Has a simple frontend table to show all urls stored in the database. 
+            User can deleted a shortend url if it is not required.<br>
+            <u>Technologies used:</u><br>
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Bootstrap</li>
+            </ul>
+            <u>Github:</u> <br>
+            <a href="https://github.com/GlenR16/URLShort">URLShort</a>
+        </div>
+        <div class="column" id="tms" style="display: none;">
+            <u>Summary:</u><br>
+            Created a application that converts speech in your google meets and produces a transcript.
+            Based on this transcript it generates a summary of the entire meet, making documentation an easy process.
+            Using GPT2 to generate a summary of the text.<br>
+            <u>Technologies used:</u><br>
+            <ul>
+                <li>Python</li>
+                <li>Tkinter</li>
+                <li>GPT2</li>
+                <li>Selenium</li>
+                <li>Beautiful Soup 4</li>
+            </ul>
+            <u>Github:</u> <br>
+            <a href="https://github.com/GlenR16/Team-Meeting-Summarizer">Team Meet Summarizer</a>
+        </div>
+        <div class="column" id="homepage" style="display: none;">
+            <u>Summary:</u><br>
+            Chrome Homepage that makes it simple for users to access frequently used sites.
+            Can be set as the default homepage in chrome.
+            Allows direct searching in Youtube,Google and Drive folders.<br>
+            <u>Technologies used:</u><br>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+                <li>FontAwesome</li>
+            </ul>
+            <u>Github:</u> <br>
+            <a href="https://github.com/GlenR16/HomePage">Chrome Homepage</a>
+        </div>
+    </main>
+    <main id="certs">
+        <div class="heading">My Certifications</div>
+        <div class="column">
+            <ul>
+                <li>Geo Data Sharing and Cybersecurity.(IIRS)</li>
+                <li>Python Certification.(HackerRank)</li>
+                <li>Linux Security and Hacking Workshop.(Mozilla Campus Club)</li>
+                <li>NLP with Deep Learning.(Fr.CRCE)</li>
+                <li>Advent of Cyber 2021.(TryHackMe)</li>
+                <li><a href="https://drive.google.com/drive/folders/1H9rX-y64JSqSmLi3syIN-MKeTGk5LZUV?usp=share_link">All Certificates</a></li>
+            </ul>
+        </div>
+    </main>
+    <main id="achieve">
+        <div class="row">
+            <div class="column">
+                <div class="heading">Achievements</div>
+                <ul>
+                    <li>HTB Global Rank 604</li>
+                    <li>Damncon CTF Team Rank 30</li>
+                    <li>TryHackMe top 6%</li>
+                    <li>58th Place ShaastraCTF</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="heading">Soft Skills</div>
+                <ul>
+                    <li>Fast Learner.</li>
+                    <li>Good problem solving skills.</li>
+                    <li>Fluent in English.</li>
+                    <li>Energetic & Punctual.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <main id="contact">
+        <div class="heading">Contact Me</div>
+        <div class="column" style="text-align: center;">
+            <a href="https://github.com/GlenR16"><img src="./square-github.svg" alt="Github" class="brand"></a>
+            <a href="https://www.linkedin.com/in/glen-rodrigues16/"><img src="./linkedin.svg" alt="Github" class="brand"></a>
+            <a href="mailto:glenrogers1234@gmail.com"><img src="./square-envelope-solid.svg" alt="Github" class="brand"></a><br>
+            For any queries regarding work, feel free to contact me on the above platforms. I will respond to you in 1 - 4 working days.
+        </div>
+    </main>
+</body>
+<script src="./main.js"></script>
+</html>
