@@ -1,219 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <!--<script src="https://kit.fontawesome.com/853e6dc438.js" crossorigin="anonymous"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./extra.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <title>Glen Rodrigues</title>
 </head>
-<body>
-    <nav id="nav">
-        <a href="#home" class="navlink active">Home</a>
-        <a href="#about" class="navlink">About</a>
-        <a href="#languages" class="navlink">Languages</a>
-        <a href="#projects" class="navlink">Projects</a>
-        <a href="#certs" class="navlink">Certifications</a>
-        <a href="#achieve" class="navlink">Achievements</a>
-        <a href="#contact" class="navlink">Contact</a>
+<body data-bs-theme="dark" class="mx-3 h-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top m-3 rounded px-1">
+        <div class="container-fluid">
+            <div class="navbar-brand fs-3" >𝕲𝖑𝖊𝖓</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="me-auto">
+                </div>
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main id="home">
-        <p class="jumbotron">I'm Glen<br>A Computer Engineering student</p>
-    </main>
-    <main id="about">
-        <div class="column">
-        <div class="heading">About Me</div>
 
-            I am a third year computer engineering student at Fr.Conceicao Rodrigues college of Engineering. <br> I enjoy working on web development projects and participating in cybersecurity competitions. <br>
-            I have worked on projects that vary in domain and would like to continue learning new concepts of computer science. <br> This website was completely made by me. I hope you enjoy your stay here.
-        </div>
-    </main>
-    <main id="languages">
-        <div class="row">
-            <div class="column">
-                <div class="heading">Languages</div>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>C/C++</li>
-                    <li>Java</li>
-                    <li>Bash</li>
-                    <li>Go Lang</li>
-                    <li>LAMP/Django Stack</li>
-                </ul>
+    <div class="d-flex flex-column align-items-center justify-content-center h-100 pt-5 mb-5" id="home">
+        <div class="h1 fw-bold">I'm Glen Rodrigues</div>
+        <div class="h2">Computer Engineer</div><br>
+        <i class="fa-solid fa-angles-down fa-2x text-white"></i>
+    </div>
+    <div class="w-100 h-100 pt-5 mb-5" id="education">
+        <h2 class="text-center mt-5 pt-5">Education</h2>
+        <div class="accordion pt-2" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h2 class="m-0">Fr.Conceicao Rodrigues College of Engineering</h2>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-5">
+                    <div class="d-flex flex-row justify-content-between">
+                        <b>Computer Engineering with honors in Cybersecurity</b>
+                        <b>2020 - Present</b>
+                    </div>
+                    CGPA: 8.9 <br>
+                    Completion:
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="column">
-                <div class="heading">Softwares/Technologies</div>
-                <ul>
-                    <li>Windows/Linux</li>
-                    <li>Apache</li>
-                    <li>VSCode</li>
-                    <li>MySQL/SQLite3/NoSQL</li>
-                    <li>Github/Git</li>
-                    <li>Jupyter/Colab</li>
-                    <li>Machine Learning</li>
-                    <li>Jira</li>
-                    <li>Jenkins</li>
-                </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h2 class="m-0">R.D & S.H National College</h2>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="d-flex flex-row justify-content-between">
+                        <b>Maharashtra State Board of Higher Secondary Education (Computer Science) </b>
+                        <b>2018 - 2020</b>
+                    </div>  
+                    Percentage: 75% <br>
+                    Completion:
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                        <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2 class="m-0">Holy Cross Convent School</h2>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="d-flex flex-row justify-content-between">
+                        <b>Maharashtra State Board of Secondary Education</b>
+                        <b>2008 - 2018</b>
+                    </div>  
+                    Percentage: 84%<br>
+                    Completion:
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                         <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
-        
-    </main>
-    <main id="projects">
-        <br><br>
-        <div class="heading">My Projects</div>
-        <select name="projects" id="projects" onchange="projectChange(this.value);">
-            <option value="1">Stock Market Analyzer</option>
-            <option value="2">OCR App</option>
-            <option value="3">Finance Manager</option>
-            <option value="4">URLShort</option>
-            <option value="5">Team Meet Summarizer</option>
-            <option value="6">Chrome Homepage</option>
-        </select>
-        <div class="column" id="sma">
-            <u>Summary:</u><br>
-            Created a web application that uses a combination of sentiment analysis and regression algorithms to determine the change in the stock market.
-            The application of these two methods simultaneously allows us to control the precision and accuracy of the prediction algorithm. 
-            Allow users of the web application to learn and make decisions about the stock market, and help them gain financial independence. <br>
-            <u>Technologies used:</u>
-            <ul>
-                <li>Django</li>
-                <li>Python</li>
-                <li>Scrapy</li>
-                <li>Tensorflow</li>
-                <li>Keras</li>
-                <li>Scikit Learn</li>
-                <li>NLTK</li>
-            </ul>
-            <u>Github:</u> <br>
-            Work in Progress.
-        </div>
-        <div class="column" id="ocr" style="display: none;">
-            <u>Summary:</u><br>
-            Created a Tkinter based computer application that uses machine learning to convert images, drawings and PDFs to text. 
-            Application has an inbuilt white board to enable users to draw/write the text and convert it into text with one click. 
-            It can also take live input from the user camera and detect text in the frame.  <br>
-            <u>Technologies used:</u><br>
-            <ul>
-                <li>Python</li>
-                <li>Tkinter</li>
-                <li>PyTesseract</li>
-                <li>OpenCV</li>
-            </ul>
-            <u>Github:</u> <br>
-            <a href="https://github.com/GlenR16/OCR">Optical Character Recognition</a>
-        </div>
-        <div class="column" id="finance" style="display: none;">
-            <u>Summary:</u><br>
-            Created a React based simple web application to keep track of your finances.
-            Uses NodeJS as a backend to calculate total savings and balance.
-            Enables user to categorize their expenses easly and monitor budgets from a single glance.<br>
-            <u>Technologies used:</u><br>
-            <ul>
-                <li>NodeJS</li>
-                <li>React</li>
-                <li>Material-UI</li>
-                <li>Bootstrap</li>
-            </ul>
-            <u>Github:</u> <br>
-            <a href="https://github.com/GlenR16/Finance-Manager">Finance Manager</a>
-        </div>
-        <div class="column" id="urlshort" style="display: none;">
-            <u>Summary:</u><br>
-            Created a simple url shortner web application that allows user to customise the shortend url as well.
-            Has a simple frontend table to show all urls stored in the database. 
-            User can deleted a shortend url if it is not required.<br>
-            <u>Technologies used:</u><br>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Bootstrap</li>
-            </ul>
-            <u>Github:</u> <br>
-            <a href="https://github.com/GlenR16/URLShort">URLShort</a>
-        </div>
-        <div class="column" id="tms" style="display: none;">
-            <u>Summary:</u><br>
-            Created a application that converts speech in your google meets and produces a transcript.
-            Based on this transcript it generates a summary of the entire meet, making documentation an easy process.
-            Using GPT2 to generate a summary of the text.<br>
-            <u>Technologies used:</u><br>
-            <ul>
-                <li>Python</li>
-                <li>Tkinter</li>
-                <li>GPT2</li>
-                <li>Selenium</li>
-                <li>Beautiful Soup 4</li>
-            </ul>
-            <u>Github:</u> <br>
-            <a href="https://github.com/GlenR16/Team-Meeting-Summarizer">Team Meet Summarizer</a>
-        </div>
-        <div class="column" id="homepage" style="display: none;">
-            <u>Summary:</u><br>
-            Chrome Homepage that makes it simple for users to access frequently used sites.
-            Can be set as the default homepage in chrome.
-            Allows direct searching in Youtube,Google and Drive folders.<br>
-            <u>Technologies used:</u><br>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Bootstrap</li>
-                <li>FontAwesome</li>
-            </ul>
-            <u>Github:</u> <br>
-            <a href="https://github.com/GlenR16/HomePage">Chrome Homepage</a>
-        </div>
-    </main>
-    <main id="certs">
-        <div class="column">
-        <div class="heading">My Certifications</div>
+       
+    </div> 
 
-            <ul>
-                <li>Geo Data Sharing and Cybersecurity.(IIRS)</li>
-                <li>Python Certification.(HackerRank)</li>
-                <li>Linux Security and Hacking Workshop.(Mozilla Campus Club)</li>
-                <li>NLP with Deep Learning.(Fr.CRCE)</li>
-                <li>Advent of Cyber 2021.(TryHackMe)</li>
-                <li><a href="https://drive.google.com/drive/folders/1H9rX-y64JSqSmLi3syIN-MKeTGk5LZUV?usp=share_link">All Certificates</a></li>
-            </ul>
-        </div>
-    </main>
-    <main id="achieve">
-        <div class="row">
-            <div class="column">
-                <div class="heading">Achievements</div>
-                <ul>
-                    <li>HTB Global Rank 604</li>
-                    <li>Damncon CTF Team Rank 30</li>
-                    <li>TryHackMe top 6%</li>
-                    <li>58th Place ShaastraCTF</li>
+    <div class="d-flex flex-column align-items-center h-100 pt-5 my-5" id="experience">
+        <h2 class="text-center mt-5 pt-5 mb-2">Experience</h2>
+        <div class="d-flex flex-column d-sm-flex flex-sm-row">
+            <div class="card m-2" style="width: 18rem;">
+                <div class="card-header">
+                    <h2 class="m-0">XIRCLS</h2>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Python Developer</h5>
+                  <p class="card-text">Working as a full stack python developer. <br> Frequently working with Django Framework.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Internship</li>
+                  <li class="list-group-item">Jan 2023 - Current</li>
                 </ul>
             </div>
-            <div class="column">
-                <div class="heading">Soft Skills</div>
-                <ul>
-                    <li>Fast Learner.</li>
-                    <li>Good problem solving skills.</li>
-                    <li>Fluent in English.</li>
-                    <li>Energetic & Punctual.</li>
+            <div class="card m-2" style="width: 18rem;">
+                <div class="card-header">
+                    <h2 class="m-0">Google Developer Student Clubs</h2>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cybersecurity Co-Lead</h5>
+                  <p class="card-text">Working as a cybersecurity representative on campus. <br> Organising and managing many types of events.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Club</li>
+                  <li class="list-group-item">July 2022 - Current</li>
                 </ul>
             </div>
         </div>
-    </main>
-    <main id="contact">
-        <div class="column" style="text-align: center;">
-        <div class="heading">Contact Me</div>
+    </div>
 
-            <a href="https://github.com/GlenR16"><img src="./square-github.svg" alt="Github" class="brand"></a>
-            <a href="https://www.linkedin.com/in/glen-rodrigues16/"><img src="./linkedin.svg" alt="Github" class="brand"></a>
-            <a href="mailto:glenrogers1234@gmail.com"><img src="./square-envelope-solid.svg" alt="Github" class="brand"></a><br>
-            For any queries regarding work, feel free to contact me on the above platforms. I will respond to you in 1 - 4 working days.
+    <div class="pb-1">
+        <div class="d-flex flex-column align-items-center h-100 pt-5 pb-5 my-5 w-100" id="skills">
+            <h2 class="text-center mt-5 pt-5 mb-2">Skills</h2>
+            <div class="d-flex flex-column d-sm-flex flex-sm-row w-100 p-1 pb-5">
+                <ul class="list-group m-1 w-100">
+                    <li class="list-group-item active" aria-current="true">Languages</li>
+                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item">C/C++</li>
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">Javascript</li>
+                    <li class="list-group-item">Bash</li>
+                    <li class="list-group-item">Java</li>
+                    <li class="list-group-item">Golang</li>
+                    <li class="list-group-item">MySQL/SQLite3/NoSQL</li>
+                </ul>
+                <ul class="list-group m-1 w-100">
+                    <li class="list-group-item active" aria-current="true">Softwares</li>
+                    <li class="list-group-item">Windows/Linux</li>
+                    <li class="list-group-item">Apache</li>
+                    <li class="list-group-item">VSCode</li>
+                    <li class="list-group-item">Github/Git</li>
+                    <li class="list-group-item">Jupyter/Colab</li>
+                    <li class="list-group-item">Machine Learning</li>
+                    <li class="list-group-item">Jira</li>
+                    <li class="list-group-item">Jenkins</li>
+                </ul>
+                <ul class="list-group m-1 w-100">
+                    <li class="list-group-item active" aria-current="true">Certifications</li>
+                    <li class="list-group-item">Geo Data Sharing and Cybersecurity.(IIRS)</li>
+                    <li class="list-group-item">Python Certification.(HackerRank)</li>
+                    <li class="list-group-item">Linux Security and Hacking Workshop.(Mozilla Campus Club)</li>
+                    <li class="list-group-item">NLP with Deep Learning.(Fr.CRCE)</li>
+                    <li class="list-group-item">Advent of Cyber 2021.(TryHackMe)</li>
+                    <a href="https://drive.google.com/drive/folders/1H9rX-y64JSqSmLi3syIN-MKeTGk5LZUV?usp=share_link" class="list-group-item list-group-item-action">All Certifications <i class="fa-solid fa-link"></i></a>
+                </ul>
+                <ul class="list-group m-1 w-100">
+                    <li class="list-group-item active" aria-current="true">Achievements</li>
+                    <li class="list-group-item">Unscript 2k23 National Hackathon Runner Up (AIML)</li>
+                    <li class="list-group-item">HackTheBox Global Rank 604</li>
+                    <li class="list-group-item">Damncon CTF Team Rank 30</li>
+                    <li class="list-group-item">TryHackMe top 6%</li>
+                    <li class="list-group-item">58th Place in India ShaastraCTF</li>
+                </ul>
+                <ul class="list-group m-1 w-100">
+                    <li class="list-group-item active" aria-current="true">Soft skills</li>
+                    <li class="list-group-item">Fast Learner.</li>
+                    <li class="list-group-item">Good problem solving skills.</li>
+                    <li class="list-group-item">Fluent in English.</li>
+                    <li class="list-group-item">Energetic & Punctual.</li>
+                    <li class="list-group-item">Good Communication skills.</li>
+                </ul>
+            </div>
         </div>
-    </main>
+    </div>
+    <div class="mt-5 pt-5">
+        <div class="d-flex flex-column align-items-center h-100 pt-5 mt-5 w-100" id="projects">
+            <h2 class="text-center mt-5 pt-5 mb-2">Projects</h2>
+                <p class="d-flex flex-row-reverse flex-wrap justify-content-center">
+    
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary d-flex align-items-center m-1" for="btncheck1" data-bs-toggle="collapse" data-bs-target="#imageiq">ImageIQ</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary d-flex align-items-center m-1" for="btncheck2" data-bs-toggle="collapse" data-bs-target="#divorceprediction">Divorce Prediction</label>
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary d-flex align-items-center m-1" for="btncheck3" data-bs-toggle="collapse" data-bs-target="#sma">Stock Market Analyzer</label>
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-primary d-flex align-items-center m-1" for="btncheck4" data-bs-toggle="collapse" data-bs-target="#tms">Team Meeting Summarizer</label>
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                    <label class="btn btn-outline-primary d-flex align-items-center m-1" for="btncheck5" data-bs-toggle="collapse" data-bs-target="#ocr">OCR App</label>
+                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                    <label class="btn btn-outline-primary d-flex align-items-center m-1" for="btncheck6" data-bs-toggle="collapse" data-bs-target="#urlshort">URL Shortner</label>
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="collapse" id="imageiq">
+                            <div class="card my-2">
+                                <div class="card-header">
+                                    ImageIQ
+                                </div>
+                                <div class="card-body">
+                                    ImageIQ enables users/companies to bulk upload images to our server. Our web application analyses all the images and classifies them into good,moderate or poor quality images. If the image is good then the appilcation automatically OCR's the image. The classification process helps save time by not further processing the bad and moderate images.
+                                    The application uses a Convolution Neural Network to classify the images. Initially we recieved a dataset of 70 images. These images were augmented to increase the effective size of the dataset. ** The CNN Model is not uploaded to Github as it is larger than 100mb in size.**
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Feb 2023</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-link"></i> <a href="https://github.com/GlenR16/CtrlAlt-Elite_Unscript-2k23">Github Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse" id="sma">
+                            <div class="card my-2">
+                                <div class="card-header">
+                                    Stock Market Analyzer
+                                </div>
+                                <div class="card-body">
+                                    Created a web application that uses a combination of sentiment analysis and regression algorithms to determine the change in the stock market. The application of these two methods simultaneously allows us to control the precision and accuracy of the prediction algorithm. Allow users of the web application to learn and make decisions about the stock market, and help them gain financial independence.
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Ongoing</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-link"></i> Not public yet</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse" id="ocr">
+                            <div class="card my-2">
+                                <div class="card-header">
+                                    OCR App
+                                </div>
+                                <div class="card-body">
+                                    Created a Tkinter based computer application that uses machine learning to convert images, drawings and PDFs to text. Application has an inbuilt white board to enable users to draw/write the text and convert it into text with one click. It can also take live input from the user camera and detect text in the frame.
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Apr 2022</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-link"></i> <a href="https://github.com/GlenR16/OCR">Github Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="collapse" id="divorceprediction">
+                            <div class="card my-2">
+                                <div class="card-header">
+                                    Divorce Prediction
+                                </div>
+                                <div class="card-body">
+                                    This application allows the user to predict if they are going to face a divorce on the basis of the answers to several questions. Please not that this verdict may not be accurate as something as complex as a relationship cannot be predicted by mere AI. Our model boasts a cross validation accuracy of 97%. The backend uses Django as the main web framework and the frontend uses Bootstrap as the main CSS extension.
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Jan 2023</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-link"></i> <a href="https://github.com/GlenR16/Divorce-Prediction">Github Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse" id="tms">
+                            <div class="card my-2">
+                                <div class="card-header">
+                                    Team Meet Summarizer
+                                </div>
+                                <div class="card-body">
+                                    Created a application that converts speech in your google meets and produces a transcript. Based on this transcript it generates a summary of the entire meet, making documentation an easy process. Using GPT2 to generate a summary of the text.
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Dec 2021</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-link"></i> <a href="https://github.com/GlenR16/Team-Meeting-Summarizer">Github Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse" id="urlshort">
+                            <div class="card my-2">
+                                <div class="card-header">
+                                    URL Shortner
+                                </div>
+                                <div class="card-body">
+                                    Created a simple url shortner web application that allows user to customise the shortend url as well. Has a simple frontend table to show all urls stored in the database. User can deleted a shortend url if it is not required.
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Mar 2022</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-link"></i> <a href="https://github.com/GlenR16/URLShort">Github Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex flex-column align-items-center h-25 px-1 pt-5 pb-5 my-5 w-100" id="contact">
+        <h2 class="text-center mt-1 pt-2 mb-2">Contact</h2>
+        <div class="d-flex w-100 flex-column flex-lg-row justify-content-center align-items-center pb-5">
+            <a href="mailto:glenrodrigues1602@gmail.com" class="btn btn-primary position-relative m-2"><i class="fa-solid fa-envelope"></i> Email Me
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </a>
+            <a href="https://github.com/GlenR16" class="btn btn-primary position-relative m-2"><i class="fa-brands fa-github"></i> My Github
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    15
+                    <span class="visually-hidden">Github Repos</span>
+                  </span>
+            </a>
+            <a href="https://www.linkedin.com/in/glen-rodrigues16/" class="btn btn-primary position-relative m-2"><i class="fa-brands fa-linkedin"></i> DM Me
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    150+
+                    <span class="visually-hidden">Connections</span>
+                  </span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-<script src="./main.js"></script>
 </html>
